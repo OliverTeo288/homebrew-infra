@@ -5,11 +5,11 @@
 class Infra < Formula
   desc ""
   homepage "https://github.com/oliverteo288/infra"
-  version "2.0.4"
+  version "2.0.5"
 
   on_macos do
-    url "https://github.com/OliverTeo288/infra/releases/download/2.0.4/infra_2.0.4_darwin_all.tar.gz"
-    sha256 "0bf1c6aef6b3851d90fdf45bf2ba6595e64d44d6ce3b0934c09756b058d07cca"
+    url "https://github.com/OliverTeo288/infra/releases/download/2.0.5/infra_2.0.5_darwin_all.tar.gz"
+    sha256 "2b8145fe0c94349af0c4230290413b54e352b064400dffa8c916fce7f62f454b"
 
     def install
       bin.install "infra"
@@ -19,8 +19,8 @@ class Infra < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/OliverTeo288/infra/releases/download/2.0.4/infra_2.0.4_linux_amd64.tar.gz"
-        sha256 "68a55cf813b94974d4b88012ee81afa22a5133dd92bf3b9a8c51fd1e298b5eb0"
+        url "https://github.com/OliverTeo288/infra/releases/download/2.0.5/infra_2.0.5_linux_amd64.tar.gz"
+        sha256 "131e4311215983dc13290c5f96059b245f5b9c2c26d2223940a77066afc1a682"
 
         def install
           bin.install "infra"
@@ -29,8 +29,8 @@ class Infra < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/OliverTeo288/infra/releases/download/2.0.4/infra_2.0.4_linux_arm64.tar.gz"
-        sha256 "d906d97eda348a6ed9a6338b8d054900ebe29d77b9bc483f73f156c84b6f5de3"
+        url "https://github.com/OliverTeo288/infra/releases/download/2.0.5/infra_2.0.5_linux_arm64.tar.gz"
+        sha256 "c6e894cf0a9376644d9643201bbb6e9b8f7f8f3b78b5f929b6f47eb015d2f2f5"
 
         def install
           bin.install "infra"
