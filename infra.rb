@@ -5,11 +5,11 @@
 class Infra < Formula
   desc ""
   homepage "https://github.com/oliverteo288/infra"
-  version "4.0.1"
+  version "4.0.2"
 
   on_macos do
-    url "https://github.com/OliverTeo288/infra/releases/download/4.0.1/infra_4.0.1_darwin_all.tar.gz"
-    sha256 "548b68db0a79939f77d33a5acc107016d91630b4f6c194e3f8bd3ce7c7a82f89"
+    url "https://github.com/OliverTeo288/infra/releases/download/4.0.2/infra_4.0.2_darwin_all.tar.gz"
+    sha256 "07dca44b796dd1e935bab6ca6fb060f464305eee46d0d3ccdfbed49f82ad8095"
 
     def install
       bin.install "infra"
@@ -19,8 +19,8 @@ class Infra < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/OliverTeo288/infra/releases/download/4.0.1/infra_4.0.1_linux_amd64.tar.gz"
-        sha256 "2aa298bbe263c646688afc37317e842d1b8eb4c332fed1eb50fab2ebfacbc026"
+        url "https://github.com/OliverTeo288/infra/releases/download/4.0.2/infra_4.0.2_linux_amd64.tar.gz"
+        sha256 "ab9c96a2a115a303d2bd7b8d288366888e83563621f5b2a49398d6b0fb0a7656"
 
         def install
           bin.install "infra"
@@ -29,8 +29,8 @@ class Infra < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/OliverTeo288/infra/releases/download/4.0.1/infra_4.0.1_linux_armv6.tar.gz"
-        sha256 "85c49e577afb40dc9b1fe505c8df916cc5aaf2f4687ede6b1f1ff2832f50345e"
+        url "https://github.com/OliverTeo288/infra/releases/download/4.0.2/infra_4.0.2_linux_armv6.tar.gz"
+        sha256 "7f87d70ff4b4f87740616da89108b17377aa9e86ff89bbd14ebdc46260f144d4"
 
         def install
           bin.install "infra"
@@ -39,8 +39,8 @@ class Infra < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/OliverTeo288/infra/releases/download/4.0.1/infra_4.0.1_linux_arm64.tar.gz"
-        sha256 "b49d4386f688a74882aaff28e16ca4710b259363fb4319b2d4b68aaf4cd16e71"
+        url "https://github.com/OliverTeo288/infra/releases/download/4.0.2/infra_4.0.2_linux_arm64.tar.gz"
+        sha256 "a8c6f7529edd593f88d244b770cb6a83eccb7ef4106d370187c9037631715fe5"
 
         def install
           bin.install "infra"
